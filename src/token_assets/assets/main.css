@@ -1,37 +1,182 @@
-body {
-    font-family: sans-serif;
-    font-size: 1.5rem;
-}
-
-img {
-    max-width: 50vw;
-    max-height: 25vw;
+html {
+    background: #a5a4ce;
+    font-family: System, monospace;
+    font-size: 10pt;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  
+  span:after {
+    content: " ";
+    display: inline-block;
+    width: 2%;
+  }
+  
+  fieldset {
+    float: left;
+    padding-right: 18px;
+  }
+  
+  #logo {
+    font-family: "Times";
+    font-size: 20pt;
+  }
+  
+  .window {
+    position: relative;
+    cursor: default;
+    margin: 2em auto;
+    width: 80%;
+    background: #3465a4;
+    color: white;
+    border: 6px double white;
+    padding: 1em;
+    box-shadow: 0 0 0 3px #3465a4, 1em 1em 3px 0 rgba(0, 0, 0, 0.5);
+    max-width: 640px;
+  }
+  
+  .window.white {
+    background: silver;
+    color: black;
+    border-color: white;
+    box-shadow: 0 0 0 3px silver, 1em 1em 3px 0 rgba(0, 0, 0, 0.5);
+  }
+  
+  .window.half-width {
+    width: 50%;
+  }
+  
+  .window h1 {
+    text-align: center;
+  }
+  
+  .window.blue p {
+    color: white;
+    text-shadow: 0 0 2px white;
+  }
+  
+  button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button,
+  .button,
+  .button:link {
+    display: inline-block;
+    font-weight: bolder;
+    color: white;
+    font-family: inherit;
+    font-size: inherit;
+    background: green;
+    padding: 0 1em;
+    box-shadow: 0.5em 0.5em 3px rgba(0, 0, 0, 0.5);
+    position: relative;
+    transition: 0.2s all ease-in;
+    border: 1px outset green;
+  }
+  
+  button.full-width,
+  .button.full-width {
     display: block;
+    text-align: center;
+  }
+  
+  button:before,
+  .button:before {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    position: absolute;
+    /*background: rgba(255,255,0,.5); /* DEBUG CLICK AREA */
+  }
+  
+  button:hover,
+  .button:active,
+  .button:focus,
+  .button:hover {
+    transform: translate3d(0.25em, 0.25em, 10em);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+    background: limegreen;
+  }
+  
+  button:hover:before,
+  .button:hover:before,
+  button:focus:before,
+  .button:focus:before {
+    top: -1em;
+    left: -1em;
+  }
+  
+  .button.pressed {
+    box-shadow: none;
+    left: 0.25em;
+    top: 0.25em;
+    margin-right: 0.25em;
+    background: gray;
+    border: 1px outset #707070;
+  }
+  
+  button:disabled {
+    transform: translate3d(0.25em, 0.25em, 10em);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+    background: gray;
+    border: 1px outset #707070;
+  }
+  
+  button:first-letter,
+  .button:first-letter {
+    color: yellow;
+  }
+  
+  button#btn-transfer {
+    margin-top: 20px;
+  }
+  
+  input,
+  textarea {
+    background: blue;
+    color: aqua;
+    width: 100%;
+    max-width: 100%;
+    font-size: 12pt;
+  }
+  input:disabled {
+    background: #505070;
+    color: #d0d0d0;
+    border: 2px solid #505070;
+  }
+  
+  .window > textarea {
+    width: 100%;
+    border: none;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .trade-buttons {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  div .transfer {
+    display: table;
     margin: auto;
-}
-
-form {
-    display: flex;
-    justify-content: center;
-    gap: 0.5em;
-    flex-flow: row wrap;
-    max-width: 40vw;
-    margin: auto;
-    align-items: baseline;
-}
-
-button[type="submit"] {
-    padding: 5px 20px;
-    margin: 10px auto;
-    float: right;
-}
-
-#greeting {
-    margin: 10px auto;
-    padding: 10px 60px;
-    border: 1px solid #222;
-}
-
-#greeting:empty {
-    display: none;
-}
+  }
+  

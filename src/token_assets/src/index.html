@@ -2,21 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>token</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DFaucet</title>
     <base href="/" />
     <link rel="icon" href="favicon.ico" />
     <link type="text/css" rel="stylesheet" href="main.css" />
-  </head>
+  	<link id="external-css" rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap" media="all">
+</head>
   <body>
-    <main>
-      <img src="logo.png" alt="DFINITY logo" />
-      <form action="#">
-        <label for="name">Enter your name: &nbsp;</label>
-        <input id="name" alt="Name" type="text" />
-        <button type="submit">Click Me!</button>
-      </form>
-      <section id="greeting"></section>
-    </main>
+    <div id="root"></div>
+    <script src="../src/index.js" type="text/jsx"></script>
   </body>
 </html>
