@@ -7,5 +7,12 @@ var symbol : Text = "DANG";
 var balances = HashMap.HashMap<Principal, Nat>(1, Principal.equal, Principal.hash);
 balances.put(owner, totalSupply);
 
+public query func balance0f (who: Principal): async Nat {
+let balance : Nat = switch (balances.get (who)) {
+case null 0;
+case (?result) result;
+};
+return balance;
+};
 
 };
