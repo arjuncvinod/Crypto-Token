@@ -1,4 +1,6 @@
 # Crypto Token
+#### React frontend and Motoko Backend 
+#### Built while learning Motoko
 
 1. Find out your principal id:
 
