@@ -1,4 +1,4 @@
-# Check your Balance
+# Crypto Token
 
 1. Find out your principal id:
 
