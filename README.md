@@ -1,6 +1,9 @@
 # Crypto Token
 #### React frontend and Motoko Backend 
 #### Built while learning Motoko
+#### Screenshot
+![image](https://github.com/arjuncvinod/Crypto-Token/assets/68469520/c5e7706d-9130-400f-8458-82bb062341a6)
+
 
 1. Find out your principal id:
 
